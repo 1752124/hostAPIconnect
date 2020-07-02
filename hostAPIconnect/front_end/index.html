@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>home</title>
+    <script src="js/bookList.js"></script>
+    <script src="js/onClick.js"></script>
+    <script src="js/ajax.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/master.css" />
+    <link type="text/css" rel="stylesheet" href="css/reset.css" />
+    <link type="text/css" rel="stylesheet" href="css/1024_768.css" />
+    <link type="text/css" rel="stylesheet" media="screen and (min-width:861px) and (max-width:960px)" href="css/pad_heng.css" />
+    <link type="text/css" rel="stylesheet" media="screen and (min-width:601px) and (max-width:860px)" href="css/pad.css" />
+    <link type="text/css" rel="stylesheet" media="screen and (min-width:481px) and (max-width:600px)" href="css/tel_heng.css" />
+    <link type="text/css" rel="stylesheet" media="screen and (max-width:480px)" href="Css/tel.css" />
+</head>
+
+<body>
+<div class="w_100_l top_title">
+    <div class="main">
+        <p><a href="#">Connect to mainframe and log on z/OS MF! </a><a href="#">Learn more</a></p>
+    </div>
+</div>
+
+<div class="w_100_l">
+    <div class="main">
+
+        <!-- top -->
+        <div class="top_banner">
+            <div class="top_logo"><img src="Images/top_logo.jpg" alt="A BOOK APART LOGO" /></div>
+            <div class="top_menu">
+                <ul>
+                </ul>
+            </div>
+            <div class="top_shop_cur">
+
+                <input type="button" name="popBox" value="Login" id="loginModalBtn" onclick="popBox()" />
+                <img src="" id='myAvatar' class="avatar" style="display: none;">
+                <p id='username' class="username" style="display: none;"></p>
+
+                <div id="popLayer">
+
+                </div>
+
+                <div id="popBox">
+                    <div><a href="javascript:void(0)" class="form-close" onclick="closeBox()">X</a></div>
+                    <div>
+                        <form name="login" onsubmit="return false;">
+                            <div>
+                                <h2 class="form-title">Welcome to z/OS MF Connecter!</h2>
+                                <p id="1" class="form-item1">UserId:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="text" id="userPhone" /></p>
+<!--                                <p id="2" class="form-item2">Username:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="text" id="name" /></p>-->
+                                <p class="form-item3">Password:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="password" id="userPwd" /></p>
+<!--                                <p id="telephone" class="form-item4">Telephone number:<input type="text" id="phone" /></p>-->
+                                <p id="login" class="form-item5"><input id=log type="submit" value="Login" onclick="loginAction()" /></p>
+<!--                                <p id="register" class="form-item6"><input id=reg type="submit" value="Register" onclick="registerAction()" /></p>-->
+<!--                                <p id="to-register" class="form-item7">Haven't got an account?&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="#" onclick="show(1);">Register now</a></p>-->
+<!--                                <p id="to-login" class="form-item8">Account has existed?&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="#" onclick="show(2)">Login now</a></p>-->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- top -->
+
+        <!-- banner -->
+        <span class="index_img"><img src="Images/banner_img.jpg" alt="Dan Cederholm" border="0" usemap="#Map" />
+        <map name="Map" id="Map">
+          <area shape="rect" coords="857,230,930,269" href="#" alt="buy now" />
+        </map>
+        </span>
+        <p class="index_hr"></p>
+        <!-- banner -->
+
+        <!-- upload JCL file -->
+        <div class="content">
+            <h1 class="h1_book_title">Upload JCL File</h1>
+            <ul id="jcl-file">
+                <div id="search" class="search">
+                    <table>
+                        <tr align="right">
+                            <td>
+                                Upload
+                                <input type="file" id="search-input" name="file" placeholder="Input the file path" />
+                                <input type="button" value="Upload" id="btn-upload" onclick="upload()" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </ul>
+        </div>
+        <!-- upload JCL file -->
+
+        <!-- bottom -->
+        <p class="index_hr"></p>
+        <div class="content_press">
+            <div class="press_porsen_01">
+                <h1>Press Room</h1>
+                <dl>
+                    <dd><img src="Images/img_men.jpg" alt="person" /></dd>
+                    <dt>
+                        <p class="date">Apr 03, 2014</p>
+                        <p class="book_title"><a href="#" target="_blank">Design Is a Job audiobook</a></p>
+                        <p class="book_intro">
+                            We’re pleased to announce that <a href="#">Design Is a Job</a> by Mike Monteiro is now available in audiobook format, through <a href="#">Audible.com</a> and <a href="#">Amazon.com</a>. Narrated by the raconteur himself, experience the guidance, real-talk, and humor of our seminal book on design as a job.
+                        </p>
+                    </dt>
+                </dl>
+            </div>
+            <div class="press_porsen_02">
+                <h1><span class="span_2"><a href="#"> More Articles →</a></span><span class="span_1"><a href="#">Press Room RSS</a></span></h1>
+                <dl>
+                    <dd><img src="Images/img_lives.jpg" alt="book img" /></dd>
+                    <dt>
+                        <p class="date">Mar 31, 2014</p>
+                        <p class="book_title"><a href="#" target="_blank">A Few of Our Faves: March 31st</a></p>
+                        <p class="book_intro">
+                            As the madness of March comes to a close, we gathered up a few things that caught our attention during the last half of the month. <a href="#">Read on for more.</a>                        </p>
+                    </dt>
+                </dl>
+            </div>
+        </div>
+        <p class="index_hr"></p>
+        <h1 class="news_title">Newsletter</h1>
+        <p class="news_title_1"><span class="span_1">Keep up to date with new book releases and announcements with our newsletter.</span><span class="span_2"><img src="Images/img_inp.jpg" /></span></p>
+        <p class="index_hr" style="margin-top:20px;"></p>
+        <div class="footer">
+            <span class="span_1">&copy; Copyright 2014, A Book Apart, LLC</span>&nbsp;&nbsp;
+            <a href="#">Help & Contact us</a>
+            <a class="a1" href="#">Press Room RSS feed</a>
+            <a class="a2" href="#">abookapart on Twitter</a>
+            <span class="span_2"><b>Published by</b><img src="Images/icon_hg.jpg" align="absmiddle" /></span>
+        </div>
+    </div>
+</div>
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>
